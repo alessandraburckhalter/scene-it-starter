@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Scene It</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -17,26 +18,54 @@
           <h2 class="display-2">Scene It</h2>
           <p>Search for movies you want to watch.</p>
           <p>Save them to your list</p>
+          <div class="film">
+            <img src="/film.png" alt="">
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12 search">
-          <form id="search-form">
+          <form id="search-form" >
             <div class="input-group input-group-lg">
               <input
-                class="form-control search-bar"
+                class="form-control search-bar border border-warning font-italic "
                 placeholder="Search for a movie..."
               />
-              <button class="btn btn-primary input-group-btn" type="submit">
-                Search
-              </button>
+              
+              <button class="btn btn-warning input-group-btn" type="submit"><i class="fa fa-search" aria-hidden="true"> Search
+              </i></button>
             </div>
           </form>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 results">
+        <div class="col-md-12 results">
           <!-- MOVIES SHOW UP HERE! -->
+          <div class="movie-container card flex-row flex-wrap" >
+
+             <!-- <div class="movie card-body col-md-4">
+              <img src="/no_image.png"  class="poster border border-primary" alt="" ><br>
+              <span class="card-title">Movie title</span><br>
+              <span class="card-text">Movie release date</span><br>
+              <button class="btn btn-warning" type="button" onclick="saveToWatchList('${currentMovie.imdbID}')">Add</button>
+            </div>
+
+            <div class="movie card-body">
+              <img src="/no_image.png"  class="poster border border-primary" alt=""><br>
+              <span class="card-title">Movie title</span><br>
+              <span class="card-text">Movie release date</span><br>
+              <button class="btn btn-warning" type="button" onclick="saveToWatchList('${currentMovie.imdbID}')">Add</button>
+            </div>
+
+            <div class="movie card-body">
+              <img src="/no_image.png"  class="poster border border-primary" alt=""><br>
+              <span class="card-title">Movie title</span><br>
+              <span class="card-text">Movie release date</span><br>
+              <button class="btn btn-warning" type="button" onclick="saveToWatchList('${currentMovie.imdbID}')">Add</button>
+            </div>-->
+
+            
+
         </div>
       </div>
     </div>

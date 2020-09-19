@@ -1,16 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i");
+
 body {
-	background-color: #B2E9FD;
-}
+	background-color: #4e89ae;
+	background-image: url(/);
+	background-size: cover;
+	
+
+	font-family: 'Chivo', sans-serif;
+ 	font-weight: 500;
+   }
+   
+   h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+ 	font-weight: 700;
+ 	font-style: italic;
+   }
 
 .header h2 {
-	color: #DC4247;
+	color: #ffce00;
 }
 
 .header p {
-	color: #50524F;
+	color: white;
+}
+
+.card-title {
+	color:white;
+	
+}
+
+.card-text {
+	color:white;
 }
 
 .results {
 	margin-top: 20px;
+}
+
+.movies-container {
+	background-color: #4e89ae;
+	border: 0;
+}
+
+
+.film img {
+	width: 120px;
+	height: 170px;
+	position: relative;
+	margin-top: -230px;
+	margin-left: 450px;
+	opacity: 0.7;
 }
 
