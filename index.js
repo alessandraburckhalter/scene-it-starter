@@ -1,3 +1,19 @@
+function saveToWatchList(imdbID) {
+    const movie = movieData.find((currentMovie) => {
+        return currentMovie.imdbID == imdbID;
+});
+
+const watchlistJSON =  localStorage.getItem('watchlist')
+const watchlist = JSON.parse(watchlistJSON);
+
+if (watchlist == null) {
+    watchlist = [];
+}
+
+watchlist.push(movie);
+watchlistJSON = JSON.stringify(watchlist);
+localStorage.setItem('watchlist', watchlistJSON);
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     function renderMovies(movieArray) {
@@ -19,26 +35,21 @@ document.addEventListener('DOMContentLoaded', function() {
     searchForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const container = document.querySelector('.movie-container');
-        container.innerHTML = renderMovies(movieData);    
+        container.innerHTML = renderMovies(movieData);
+
+        const searchString = document.getElementsByClassName('form-control')[0].value;
+
+        console.log(searchString);
+        
+        const urlEncodedSearchString = encodeURIComponent(searchString);
+        axios.get("http://www.omdbapi.com/?apikey=59354c85&s=" + urlEncodedSearchString)
+        .then(response => {
+        container.innerHTML = renderMovies(response.data.Search);
+        movieData = response.data.Search;
+        console.log(urlEncodedSearchString);
+
+        });
     })
     
 })
-
-function saveToWatchList(imdbID) {
-    const movie = movieData.find((currentMovie) => {
-        return currentMovie.imdbID == imdbID;
-});
-
-let watchlistJSON = localStorage.getItem('watchlist');
-let watchlist = JSON.parse(watchlistJSON);
-    if (watchlist === null) {
-        watchlist = []
-}
-
-watchlist.push(movie);
-watchlistJSON = JSON.stringify(watchlist);
-localStorage.setItem('watchlist', watchlistJSON);
-
-};
-
 
