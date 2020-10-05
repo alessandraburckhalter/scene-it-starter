@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Scene It</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
@@ -9,77 +10,79 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
+
   <body>
+    <!-- top navbar -->
+    <nav class="navbar w-100 navbar-expand">
+
+      <!-- github and linkedin icons -->
+
+      <a class=" navbar-brand  github pull-right navbar-right nav-link" id='navLink' href="https://github.com/alessandraburckhalter" target="_blank"><img src="/images/github-removebg-preview.png" width="30"></a> 
+
+      <a class="navbar-brand linkedin pull-right navbar-right " href="https://www.linkedin.com/in/alessandra-burckhalter/" target="_blank"><img src="/images/png-clipart-computer-icons-social-media-linkedin-social-network-social-media-text-trademark-removebg-preview.png" width="50"></a>
+
+      <!-- Your watchlist -->
+        <ul class="navbar-nav d-flex ">  
+          <li class="nav-item">
+            <a class="nav-link" id='navLink' href="./watchlist.html"> <img src="/images/food-07-512-removebg-preview.png" width="30" height="auto" class="d-inline-block align-bottom" alt=""> Your Watchlist</a>
+          </li>
+        </ul>
+    </nav>
+
+    <!-- starting first section -->
+  <section class="header-site">
+
+      <!-- main title -->
     <div class="container">
       <div class="row">
-        <div class="col-12 header text-center">
-          <h2 class="display-2">Scene It</h2>
-          <p>Search for movies you want to watch.</p>
-          <p>Save them to your list</p>
-          <div class="film">
-            <img src="/film.png" alt="">
+        <div class="col-12 header ">
+          <h2 class="display-2 text-right">Scene It</h2>
+          <p class="text-right">Search for movies you want to watch.</p>
+          <p class="text-right">Save them to your list.</p>
           </div>
         </div>
       </div>
+      
+  </section> 
+
+  <!-- starting second section -->
+    <section class="section2 ">
+      <div class="container">
       <div class="row">
-        <div class="col-12 search">
+        <div class="col-6 search">
           <form id="search-form" >
-            <div class="input-group input-group-lg">
+            <div class="">
               <input
                 class="form-control search-bar border border-warning font-italic "
-                placeholder="Search for a movie..."
+                placeholder="Search for a movie..." 
               />
               
-              <button class="btn btn-warning input-group-btn" type="submit"><i class="fa fa-search" aria-hidden="true"> Search
+              <button class="btn btn-warning input-group-btn btn-search" type="submit" id="search"><i class="fa fa-search" aria-hidden="true">
               </i></button>
             </div>
           </form>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 results">
-          <!-- MOVIES SHOW UP HERE! -->
+    </div>
+
+    <!-- displaying movies on screen -->
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row content">
           <div class="movie-container card flex-row flex-wrap" >
-
-             <!-- <div class="movie card-body col-md-4">
-              <img src="/no_image.png"  class="poster border border-primary" alt="" ><br>
-              <span class="card-title">Movie title</span><br>
-              <span class="card-text">Movie release date</span><br>
-              <button class="btn btn-warning" type="button" onclick="saveToWatchList('${currentMovie.imdbID}')">Add</button>
-            </div>
-
-            <div class="movie card-body">
-              <img src="/no_image.png"  class="poster border border-primary" alt=""><br>
-              <span class="card-title">Movie title</span><br>
-              <span class="card-text">Movie release date</span><br>
-              <button class="btn btn-warning" type="button" onclick="saveToWatchList('${currentMovie.imdbID}')">Add</button>
-            </div>
-
-            <div class="movie card-body">
-              <img src="/no_image.png"  class="poster border border-primary" alt=""><br>
-              <span class="card-title">Movie title</span><br>
-              <span class="card-text">Movie release date</span><br>
-              <button class="btn btn-warning" type="button" onclick="saveToWatchList('${currentMovie.imdbID}')">Add</button>
-            </div>-->
-
-            
-
+          </div>
         </div>
       </div>
     </div>
 
-  <div>
-  <nav id="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="watchlist.html">My watchlist</a></li>
-        </ul>
-    </nav>
-  </div>
+    <!-- footer -->
+    <footer id="footer"><p>Alessandra Burckhalter<br>Copyright
+      &copy;
+      2020</p></footer>
 
-    
+  </section>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -97,7 +100,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="data.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

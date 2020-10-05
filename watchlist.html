@@ -10,41 +10,56 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/css/watchlist.css" />
 </head>
+
 <body>
-  <nav id="menu">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="watchlist.html">My watchlist</a></li>
-    </ul>
-</nav>
-    <div class="container">
+  <nav class="navbar w-100 navbar-expand">
+    <a class=" navbar-brand  github pull-right navbar-right nav-link" id='navLink' href="https://github.com/alessandraburckhalter" target="_blank"><img src="/images/github-removebg-preview.png" width="30"></a> 
+
+    <a class="navbar-brand linkedin pull-right navbar-right " href="https://www.linkedin.com/in/alessandra-burckhalter/" target="_blank"><img src="/images/png-clipart-computer-icons-social-media-linkedin-social-network-social-media-text-trademark-removebg-preview.png" width="50"></a>
+
+      <ul class="navbar-nav d-flex ">
+        
+        <li class="nav-item">
+          <a class="nav-link" id='navLink' href="./index.html"> <img src="/images/home1.png" width="30" height="auto" class="d-inline-block align-bottom" alt=""> Home</a>
+        </li>
+      </ul>
+      </nav>
+
+    <section class="header-site">
+      <img class="camera" src="/images/cinema-camera-mb-vector-1953736-removebg-preview.png" alt="">
+      <p class="text">This page is all yours!</p>
+      <p class="text2">See the list of movies you picked below.</p>
+    <div class="container page">
     <div class="row">
-    <div class="col-12 header text-center">
-    <h2 class="display-2">Scene It</h2>
-    <p>This page is all yours!</p>
-    <p>See the list of movies you picked below.</p>
-    <div class="film">
-    <img src="/film.png" alt="">
-    </div>
-    <span>⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 ⭐️ 🌟 </span>
+    <div class="col-12 header ">
+    <h2 class="display-2 text-center"></h2>
+  
+    <p class="text-center"></p>
+  </div>
+</div>
+</div>
+    
+<section class="section2 ">
+          <div class="container">
+          <div class="container-fluid">
+          <div class="row content">
+            <div class="col-12 results">
+              <!-- MOVIES SHOW UP HERE! -->
+              <div class="movie-container row content justify-content-start card-deck">
+              </div>
+            </div>
+              </div>
             </div>
           </div>
+        </div>
         
-        
-        <div class="row">
-        <div class="col-12 results">
-        <div class="movie-container card flex-row flex-wrap" >
-        
-          </div>
-          </div>
-          </div>
-    
-    
-
-    
-
+        <footer id="footer"><p>Alessandra Burckhalter<br>Copyright
+          &copy;
+          2020</p></footer>
+      </section>
+  
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+aq            965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -60,6 +75,8 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <script src="/watchlist.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="data.js"></script> -->
+    <script src="watchlist.js"></script>
 </body>
 </html>

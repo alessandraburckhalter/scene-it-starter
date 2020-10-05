@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i");
+
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+body, html {
+	position: relative;
+	margin-bottom: auto;
+	padding: 0;
+	font-family: 'Chivo', sans-serif;
+	font-weight: 500;
+	background-color: #292826;
+}
+
+html {
+    height: 100vh; /* to keep footer at the bottom */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+	align-items: stretch;
+	height: 100vh;
+}
+
+/* top navbar */
+.navbar {
+	background-color: #292826;
+}
+
+/* navbar your watchlist  */
+.nav-link {
+	color: #f9d342;
+	font-family: 'Limelight', cursive;
+}
+
+.nav-link:hover {
+	color: #f9d342;
+}
+
+/* github and linkedin logos */
+.navbar-brand {
+	position: absolute;
+	right: 0;
+}
+
+/* padding between logos */
+.linkedin {
+	padding-right: 45px;
+}
+
+/* section one */
+.header-site {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-image: url(/images/6.jpeg);
+	background-color: #FFD800;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+	padding-bottom: 220px;
+}
+
+/* main title */
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	color: black;
+}
+
+/* main title div margin */
+.header {
+	margin-top: 10%;
+}
+
+/* text under main title */
+.header p {
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* section two */
+.section2 {
+	background-color: #292826;
+	height: 100%;
+}
+
+
+.search-form {
+	position: absolute;
+}
+
+#search-form input {
+	width: 60%;
+}
+
+.btn-search {
+	position: absolute;
+	margin-top: -190px;
+	margin-left: 1101px;
+	background-color: #587498;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+.search-bar {
+	display: inline-block;
+	background-image: url;
+	padding: ;
+	position: absolute;
+	margin-top: -190px;
+	margin-left: 800px;
+	width: 80px;
+	size: 80px;
+	border: 1px solid #587498;
+}
+
+.search-bar::placeholder {
+	color: #587498;
+	font-size: 15px;
+}
+
+/* movie title */
+.card-title {
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	
+}
+
+/* movie year */
+.card-text {
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.results {
+	margin-top: 20px;
+}
+
+.movie-container {
+	border: none;
+	background: transparent;
+	margin-top: -5%;
+	height: auto;
+}
+
+.movie {
+	background-color: none;
+}
+
+
+.only-card {
+	width: 100%;
+	height: 100%;
+	background: #f9d342;
+	border-radius: .9em;
+	padding: 3px;
+}
+
+/* add movie button */
+#addButton {
+	color: white;
+	background-color: #292826;
+	font-family: 'Limelight', cursive;
+}
+
+/* footer */
+#footer {
+	bottom: 0px;
+    width: 100%;
+	clear: both;
+	
+	margin-top: 60px;
+}
+
+#footer p {
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    font-size: 12px;
+	color: #f9d342;
+	padding-bottom: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
